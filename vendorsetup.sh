@@ -1,0 +1,2 @@
+add_lunch_combo omni_h850-eng
+add_lunch_combo omni_h850-userdebug
