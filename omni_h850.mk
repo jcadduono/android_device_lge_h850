@@ -9,6 +9,6 @@ $(call inherit-product, vendor/omni/config/common.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := h850
 PRODUCT_NAME := omni_h850
-PRODUCT_BRAND := LG
+PRODUCT_BRAND := lge
 PRODUCT_MODEL := G5
-PRODUCT_MANUFACTURER := LG
+PRODUCT_MANUFACTURER := LGE
