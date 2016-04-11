@@ -4,20 +4,8 @@ ro.arch=msm8996
 ro.lcd_min_brightness=0
 ro.lcd_brightness=162
 ro.sf.lcd_density=640
-ro.hardware.keystore=mdfpp
-ro.hardware.gatekeeper=mdfpp
+ro.hardware.keystore=msm8996
 persist.sys.usb.config=mtp,adb
-persist.fuse_sdcard=true
-qemu.hw.mainkeys=1
-ro.sec.fle.encryption=true
-sys.config.bigdata_enable=true
-sys.config.bigdata_mem_enable=true
-ro.config.dha_cached_min=8
-ro.config.dha_cached_max=16
-ro.config.dha_empty_min=8
-ro.config.dha_empty_max=32
-ro.config.dha_th_rate=1.7
-ro.config.dha_pwhitelist_enable=1
 #
 # HWUI_BUILD_PROPERTIES
 #
