@@ -17,8 +17,12 @@ on fs
     write /sys/class/android_usb/android0/bDeviceSubClass 0
     write /sys/class/android_usb/android0/bDeviceProtocol 0
 
-    write /sys/class/android_usb/f_cdrom_storage/lun/cdrom_usbmode 0
-    write /sys/class/android_usb/f_mass_storage/lun/nofua 1
+    chown system system /sys/module/g_android/parameters/file
+    chmod 0660 /sys/module/g_android/parameters/file
+
+    write /sys/module/g_android/parameters/ro 0
+    write /sys/module/g_android/parameters/cdrom 0
+    write /sys/module/g_android/parameters/nofua 0
 
     setprop sys.usb.config ${persist.sys.usb.config}
 

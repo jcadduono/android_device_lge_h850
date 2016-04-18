@@ -1,4 +1,4 @@
-/firmware		vfat		/dev/block/bootdevice/by-name/modem	mounttodecrypt;fsflags=ro,context=u:object_r:firmware_file:s0
+/firmware		vfat		/dev/block/bootdevice/by-name/modem	flags=mounttodecrypt;fsflags=ro,context=u:object_r:firmware_file:s0
 /boot		emmc		/dev/block/bootdevice/by-name/boot
 /recovery		emmc		/dev/block/bootdevice/by-name/recovery
 /system		ext4		/dev/block/bootdevice/by-name/system

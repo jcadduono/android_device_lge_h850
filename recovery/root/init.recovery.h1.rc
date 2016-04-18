@@ -1,15 +1,4 @@
 on fs
     # set up crypto libs
-    mkdir /vendor/firmware
-    mkdir /vendor/firmware/keymaster
-    symlink /firmware/image/keymaste.b00 /vendor/firmware/keymaster/keymaster.b00
-    symlink /firmware/image/keymaste.b01 /vendor/firmware/keymaster/keymaster.b01
-    symlink /firmware/image/keymaste.b02 /vendor/firmware/keymaster/keymaster.b02
-    symlink /firmware/image/keymaste.b03 /vendor/firmware/keymaster/keymaster.b03
-    symlink /firmware/image/keymaste.mdt /vendor/firmware/keymaster/keymaster.mdt
-    symlink /firmware/image/cmnlib.b00 /vendor/firmware/cmnlib.b00
-    symlink /firmware/image/cmnlib.b01 /vendor/firmware/cmnlib.b01
-    symlink /firmware/image/cmnlib.b02 /vendor/firmware/cmnlib.b02
-    symlink /firmware/image/cmnlib.b03 /vendor/firmware/cmnlib.b03
-    symlink /firmware/image/cmnlib.mdt /vendor/firmware/cmnlib.mdt
+    symlink /firmware/image /vendor/firmware
     symlink /sbin/libQSEEComAPI.so /vendor/lib64/libQSEEComAPI.so
