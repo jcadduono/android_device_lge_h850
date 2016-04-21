@@ -62,9 +62,13 @@ TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_MTP_DEVICE := "/dev/mtp_usb"
+# exFAT enabled in kernel for now, exfat-fuse was causing problems
+TW_NO_EXFAT_FUSE := true
 
 # Encryption support
+# - Only enable standard crypto for now to support AOSP/CM crypto
 TW_INCLUDE_CRYPTO := true
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 #TWRP_INCLUDE_LOGCAT := true
 #TARGET_USES_LOGD := true
