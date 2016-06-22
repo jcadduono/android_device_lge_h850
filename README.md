@@ -11,5 +11,13 @@ Add to `.repo/local_manifests/h850.xml`:
 
 Then run `repo sync` to check it out.
 
+To build:
+
+```sh
+. build/envsetup.sh
+lunch omni_h850-eng
+make -j5 recoveryimage
+```
+
 Kernel sources are available at: https://github.com/jcadduono/nethunter_kernel_g5/tree/twrp-6.0
 
