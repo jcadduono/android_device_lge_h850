@@ -1,14 +1,9 @@
-on fs
-    # set up crypto libs
-    symlink /firmware/image /vendor/firmware
-    symlink /sbin/libQSEEComAPI.so /vendor/lib64/libQSEEComAPI.so
+service qseecomd /sbin/qseecomd
 
-#service qseecomd /sbin/qseecomd
-
-#service logd /system/bin/logd
-#    disabled
-#    class core
-#    socket logd stream 0666 logd logd
-#    socket logdr seqpacket 0666 logd logd
-#    socket logdw dgram 0222 logd logd
-#    group root system
+service logd /system/bin/logd
+    disabled
+    class core
+    socket logd stream 0666 logd logd
+    socket logdr seqpacket 0666 logd logd
+    socket logdw dgram 0222 logd logd
+    group root system
