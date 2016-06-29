@@ -3,6 +3,6 @@
 /system		ext4		/dev/block/bootdevice/by-name/system
 /data		ext4		/dev/block/bootdevice/by-name/userdata	flags=encryptable=/dev/block/bootdevice/by-name/encrypt
 /cache		ext4		/dev/block/bootdevice/by-name/cache
-/firmware		vfat		/dev/block/bootdevice/by-name/modem	flags=display="Firmware";mounttodecrypt;fsflags=ro,context=u:object_r:firmware_file:s0
+/firmware		vfat		/dev/block/bootdevice/by-name/modem	flags=display="Firmware";backup=1;mounttodecrypt;fsflags=context=u:object_r:firmware_file:s0
 /external_sd	vfat		/dev/block/mmcblk0p1 /dev/block/mmcblk0	flags=display="Micro SDcard";storage;wipeingui;removable;encryptable=/dev/block/bootdevice/by-name/encrypt
 /usb-otg		vfat		/dev/block/sdh1 /dev/block/sdh		flags=display="USB-OTG";storage;wipeingui;removable
