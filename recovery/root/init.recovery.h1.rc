@@ -1,3 +1,7 @@
+# questionable block locations
+on fs
+    symlink /dev/block/platform /dev/block/platform/soc
+
 service qseecomd /sbin/qseecomd
 
 service logd /system/bin/logd
